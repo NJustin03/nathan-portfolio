@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <night-sky
+        id="nightSky"
+        layers="4"
+        density="30"
+        velocity-x="5"
+        velocity-y="15"
+        star-color="#FFFF00"
+        background-color="transparent"
         >
-          Learn React
-        </a>
-      </header>
+      </night-sky>
     </div>
   );
 }
