@@ -3,13 +3,11 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from './components/Header';
+import WelcomePage from './components/WelcomePage';
 
 function App() {
   return (
     <div className="App">
-      <header id="header">
-        <AppHeader />
-      </header>
       <night-sky
         id="nightSky"
         layers="4"
@@ -17,12 +15,19 @@ function App() {
         velocity-x="5"
         velocity-y="15"
         star-color="#FFFF00"
-        background-color="transparent"
         >
           
       </night-sky>
+      <header id="header">
+        <AppHeader />
+      </header>
 
-      <h1 className="AboutPage">About</h1>
+      <WelcomePage></WelcomePage>
+      <h1 className="Section">About</h1>
+      <h1 className="Section">Skills</h1>
+      <h1 className="Section">Projects</h1>
+      <h1 className="Section">Contact</h1>
+      
     </div>
   );
 }
