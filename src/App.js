@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from './components/Header';
 import WelcomePage from './components/WelcomePage';
 //import SkillsPage from './components/SkillsPage.js';
+import ProjectsPage from './components/ProjectsPage';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <h2 className="Introduction">Other Technologies</h2>
       <p className="Introduction">Github/Github Desktop, Unity, Postman, mySQL, MongoDB, Firebase </p>
       <h1 className="Section">Projects</h1>
+      <ProjectsPage></ProjectsPage>
       <h1 className="Section">Contact</h1>
       
     </div>
