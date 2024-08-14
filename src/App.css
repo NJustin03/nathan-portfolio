@@ -5,7 +5,7 @@
 
 .App-content{
   background: #050f1c;
-  height: 400vh;
+  height: 450vh;
 }
 
 .Navbar-items{
@@ -92,7 +92,7 @@
 .IconHolder {
   justify-content: center;
   text-align: left;
-  width: 300px;
+  width: 100%;
 }
 
 .ProjectHolder{
