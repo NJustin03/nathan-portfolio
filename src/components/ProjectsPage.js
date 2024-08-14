@@ -20,11 +20,11 @@ export default function ProjectsPage(){
 
     useEffect(() => {
         const updateCardsPerPage = () => {
-            if (window.innerWidth < 1080) {
+            if (window.innerWidth <= 1024) {
                 setCardsPerPage(1);
-            } else if (window.innerWidth < 1440) {
+            } else if (window.innerWidth <= 1440) {
                 setCardsPerPage(2);
-            } else {
+            } else{
                 setCardsPerPage(3);
             }
         };
@@ -54,10 +54,10 @@ export default function ProjectsPage(){
 
     const renderCard = (card, index) => {
         return (
-            <Card style={{background: '#535C91'}} key={index} className="Project">
+            <Card style={{background: '#535C91', flex: '1 1 300px', maxWidth: '80%'}} key={index} className="Project">
                 <Card.Header style={{background: '#070F2B', color: 'white'}}>
                     <div>
-                        <span style={{fontSize: '24px'}}>{card.title}</span>  
+                        <span className="glowing" style={{fontSize: '24px', color: 'rgb(116, 230, 243)'}}>{card.title}</span>  
                     </div>
                     <Button variant="link" style={{background: 'none', border: 'none'}}>
                             <Image src="https://cdn.iconscout.com/icon/free/png-256/free-github-1767765-1502345.png" alt="Profile" roundedCircle style={{width: '50px', background: 'white'}}/>
@@ -65,11 +65,11 @@ export default function ProjectsPage(){
                 </Card.Header>
                 <Card.Img variant="top" src={card.image}></Card.Img>
                 <Card.Body style={{background: '#1B1A55'}}>
-                    <Card.Text style={{color: 'white'}}>
+                    <Card.Text className="glowing" style={{color: 'rgb(116, 230, 243)'}}>
                         {card.text}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer style={{background: '#070F2B', color: 'white'}}>{card.dateCreated}</Card.Footer>
+                <Card.Footer className="glowing" style={{background: '#070F2B', color: 'rgb(116, 230, 243)'}}>{card.dateCreated}</Card.Footer>
             </Card>
         );
 

@@ -31,7 +31,7 @@ export default function AppHeader(){
     }, [lastScrollY]);
 
     return(
-        <div>
+        <div id="home">
             <Navbar collapseOnSelect 
                     expand="lg" 
                     className={`Navbar-items ${showNavbar} ? 'visible' : 'hidden'}`}

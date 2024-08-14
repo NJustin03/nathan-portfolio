@@ -14,11 +14,17 @@
 }
 
 .Section {
-  padding-top: 5%;
   color: rgb(116, 230, 243);
-  position: relative;
-  justify-content: center;
   animation: glow 1s ease-in-out infinite alternate;
+  text-align: left;
+  padding-left: 1%;
+}
+
+.SectionContact {
+  color: rgb(116, 230, 243);
+  animation: glow 1s ease-in-out infinite alternate;
+  text-align: center;
+  padding-left: 1%;
 }
 
 .Introduction {
@@ -30,9 +36,9 @@
 }
 
 .Subheading {
+  text-align: left;
   color: rgb(116, 230, 243);
   position: relative;
-  justify-content: center;
   padding-top: 3%;
   padding-bottom: 2%;
   animation: glow 1s ease-in-out infinite alternate;
@@ -65,7 +71,7 @@
   display: flex;
   align-items: center;
   padding-top: 35%;
-  padding-bottom: 40%;
+  padding-bottom: 0%;
 }
 
 .AboutHolder-mobile {
@@ -78,26 +84,14 @@
   justify-content: center;
   color: rgb(116, 230, 243);
   text-align: left;
-  margin-left: 20%;
+  margin-left: 1%;
   margin-right: 20%;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.SkillHolder{
-  display: flex;
+.IconHolder {
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.Icon {
-  position: relative;
-  justify-content: center;
-}
-
-.Icon-mobile {
-  position: relative;
-  justify-content: center;
+  text-align: left;
   width: 300px;
 }
 
@@ -112,15 +106,30 @@
   position: relative;
   justify-content: center;
   transition: all 0.3s;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 8%;
+  margin-bottom: 10%;
   width: 30rem;
   margin-right: 40px;
   margin-left: 40px;
 }
 
 .Project:hover{
-  transform: scale(1.15);
+  transform: scale(1.1);
+}
+
+.ContactHolder{
+  display: flex;
+  justify-content: center;
+}
+
+.ContactParagraph {
+  color: rgb(116, 230, 243);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glowing {
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
