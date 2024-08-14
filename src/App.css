@@ -3,18 +3,49 @@
   height: 100vh;
 }
 
+.App-content{
+  background: #050f1c;
+  height: 400vh;
+}
+
+.Navbar-items{
+  background: #050f1c;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
 .Section {
   padding-top: 5%;
-  color: white;
+  color: rgb(116, 230, 243);
   position: relative;
   justify-content: center;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .Introduction {
-  color: white;
+  color: rgb(116, 230, 243);
   position: relative;
   justify-content: center;
-  padding-bottom: 5%
+  padding-bottom: 5%;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.Subheading {
+  color: rgb(116, 230, 243);
+  position: relative;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.NavImage {
+  position: relative;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  animation: image-glow 1s ease-in-out infinite alternate;
+  background-color: transparent;
+  box-shadow: 0 0 5px rgba(116, 230, 243, 0); /* Invisible shadow */
 }
 
 .Image {
@@ -45,23 +76,29 @@
 .AboutParagraph {
   position: relative;
   justify-content: center;
-  color: white;
+  color: rgb(116, 230, 243);
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
-.IconHolder{
+.SkillHolder{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .Icon {
   position: relative;
   justify-content: center;
-  width: 50px;
-  padding-right: 20%;
-  padding-left: 20%;
+}
+
+.Icon-mobile {
+  position: relative;
+  justify-content: center;
+  width: 300px;
 }
 
 .ProjectHolder{
@@ -75,23 +112,57 @@
   position: relative;
   justify-content: center;
   transition: all 0.3s;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 19rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 30rem;
   margin-right: 40px;
   margin-left: 40px;
 }
 
 .Project:hover{
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
-#nightSky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 250vh;
-  overflow: hidden;
-  z-index: 0;
+@keyframes glow {
+  from{
+    text-shadow: 0 0 20px #99c0f4;
+  }
+  to{
+    text-shadow: 0 0 30px #99c0f4,
+                0 0 10px #99c0f4;
+  }
+}
+
+@keyframes image-glow {
+  from{
+    box-shadow: 0 0 20px #99c0f4;
+  }
+  to{
+    box-shadow: 0 0 30px #99c0f4,
+                0 0 10px #99c0f4;
+  }
+}
+
+@keyframes barGlow {
+  0% {
+    stroke: rgba(116, 230, 243, 0.5);
+    stroke-width: 2;
+  }
+  100% {
+    stroke: rgba(116, 230, 243, 1);
+    stroke-width: 4;
+  }
+}
+
+.custom-toggler {
+  border-color: rgb(116, 230, 243); /* Change border color of the toggle button */
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(116, 230, 243)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon .glow-bars {
+  animation: barGlow 1s ease-in-out infinite alternate;
 }

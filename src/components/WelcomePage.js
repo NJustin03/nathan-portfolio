@@ -28,15 +28,15 @@ export default function WelcomePage(){
             {isMobile ? (
                 //Mobile View
                 <div className="AboutHolder-mobile">
-                    <h1 className="Introduction">Welcome!</h1>
+                    <h1 className="Introduction" id="home">Welcome!</h1>
                     <h2 className="Introduction">My name is Nathan</h2>
                     <Image src={pfp} roundedCircle fluid className="Image-mobile"/>
-                    </div>
+                </div>
             ) : (
                 <Row>
                 <div className="AboutHolder">
                         <Col xs={6} md={6}>
-                            <h1 className="Introduction">Welcome!</h1>
+                            <h1 className="Introduction" id="home">Welcome!</h1>
                             <h2 className="Introduction">My name is Nathan</h2>
                         </Col>
                         <Col xs={6} md={6}>
