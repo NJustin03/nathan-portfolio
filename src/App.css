@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .App-content{
@@ -15,7 +18,7 @@
 
 .Section {
   color: rgb(116, 230, 243);
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate, fadeInRight 1s ease-in-out;
   text-align: left;
   padding-left: 1%;
 }
@@ -32,7 +35,7 @@
   position: relative;
   justify-content: center;
   padding-bottom: 5%;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate, fadeInLeft 1s ease-in-out;
 }
 
 .Subheading {
@@ -58,6 +61,7 @@
   position: relative;
   justify-content: center;
   width: 300px;
+  animation: fadeInRight 1s;
 }
 
 .Image-mobile {
@@ -65,6 +69,7 @@
   justify-content: center;
   width: 200px;
   padding-top: 10%;
+  animation: fadeInRight 1s;
 }
 
 .AboutHolder {
@@ -132,6 +137,14 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.glowing-box {
+  animation: image-glow 1s ease-in-out infinite alternate;
+}
+
+.no-glow {
+  animation: none;
+}
+
 @keyframes glow {
   from{
     text-shadow: 0 0 20px #99c0f4;
@@ -174,4 +187,26 @@
 
 .custom-toggler .navbar-toggler-icon .glow-bars {
   animation: barGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0%;
+    left: 10%;
+  }
+  to{
+    opacity: 100%;
+    left: 0%;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0%;
+    right: 10%;
+  }
+  to{
+    opacity: 100%;
+    right: 0%;
+  }
 }

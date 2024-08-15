@@ -11,7 +11,12 @@ export default function ContactPage(){
                 ensure to respond as quickly as possible. I'm always happy 
                 to connect and answer any questions you may have!
                 </p>
-                <Button href="mailto:nathanjustin03@gmail.com">
+                <Button 
+                    href="mailto:nathanjustin03@gmail.com" 
+                    style={{background: '#1B1A55',
+                    color: 'rgb(116, 230, 243)'}}
+                    className='glowing'
+                >
                     Contact Me
                 </Button>
             </div>
