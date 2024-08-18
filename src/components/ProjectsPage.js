@@ -74,7 +74,7 @@ export default function ProjectsPage(){
 
     }
     return(
-        <div>
+        <div style={{paddingBottom: '400px'}}>
             <div className="ProjectHolder">
                 {currentCards.map(renderCard)}
             </div>

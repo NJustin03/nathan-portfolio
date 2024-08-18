@@ -1,14 +1,10 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-.App-content{
   background: #050f1c;
-  height: 450vh;
 }
 
 .Navbar-items{

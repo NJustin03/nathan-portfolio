@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 export default function ContactPage(){
     return(
         <Container>
-            <div>  
+            <div style={{paddingBottom: '300px'}}>  
                 <p className="ContactParagraph">
                 Whether you're curious about my work, need more information, 
                 or just want to chat, feel free to reach out via email. I will
