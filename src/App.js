@@ -19,7 +19,21 @@ function App() {
         <WelcomePage></WelcomePage>
         <h1 className="Section" id="about" style={{paddingTop: '35%'}}>About</h1>
         <p className="AboutParagraph">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Augue praesent sit in odio vulputate vehicula. Aliquet sit penatibus dapibus mauris elementum mauris etiam metus! Massa dis felis netus et euismod imperdiet felis augue. Cras ullamcorper libero inceptos mus elementum torquent vitae. Parturient lobortis class dignissim per erat, ultricies tempus luctus.
+          I am a Computer Science major with a Mathematics minor at the University of 
+          Central Florida, aspiring to build a career as a Software Engineer. My 
+          professional interests span across several key areas, including Machine 
+          Learning, Artificial Intelligence, Virtual and Augmented Reality, and 
+          Full-Stack Web Development. I am passionate about leveraging technology 
+          to solve complex problems and am eager to contribute to cutting-edge 
+          advancements in the field.
+        </p>
+        <br></br>
+        <p className="AboutParagraph">
+          As far as my strengths, I am someone who thrives in a group setting. I am a 
+          very open and honest communicator, and I make it a priority to maintain clear 
+          communication with others in a team environment. I actively listen to others, 
+          provide constructive feedback, and adapt to different perspectives, all of 
+          which help me contribute effectively to team goals.  
         </p>
 
         <h1 className="Section" id="skills" style={{paddingTop: '35%'}}>Skills</h1>
