@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nathan-portfolio/static/css/main.3f09379b.css",
-    "main.js": "/nathan-portfolio/static/js/main.b49a8044.js",
+    "main.js": "/nathan-portfolio/static/js/main.6d42090d.js",
     "static/js/453.88b9a083.chunk.js": "/nathan-portfolio/static/js/453.88b9a083.chunk.js",
     "static/media/NathanPFP.JPG": "/nathan-portfolio/static/media/NathanPFP.28f9a28794d69e791b4d.JPG",
     "static/media/Gesturescape2.png": "/nathan-portfolio/static/media/Gesturescape2.0f19df25e31cecdcf71c.png",
@@ -10,11 +10,11 @@
     "static/media/SpaceHavoc2.png": "/nathan-portfolio/static/media/SpaceHavoc2.f957fa2e701a17687ace.png",
     "index.html": "/nathan-portfolio/index.html",
     "main.3f09379b.css.map": "/nathan-portfolio/static/css/main.3f09379b.css.map",
-    "main.b49a8044.js.map": "/nathan-portfolio/static/js/main.b49a8044.js.map",
+    "main.6d42090d.js.map": "/nathan-portfolio/static/js/main.6d42090d.js.map",
     "453.88b9a083.chunk.js.map": "/nathan-portfolio/static/js/453.88b9a083.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f09379b.css",
-    "static/js/main.b49a8044.js"
+    "static/js/main.6d42090d.js"
   ]
 }
