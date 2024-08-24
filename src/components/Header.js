@@ -58,7 +58,7 @@ export default function AppHeader(){
                                 <a href={resumeFile} download>
                                     <Image src={resumePic} className="NavImage"/>
                                 </a>
-                                <a href="https://www.linkedin.com/in/nathan-justin-a5270b280/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/nathan-a-justin/" target="_blank" rel="noopener noreferrer">
                                     <Image src={linkedInPic} className="NavImage"/>
                                 </a>
                                 <a href="https://github.com/SkyDrqgon" target="_blank" rel="noopener noreferrer">
