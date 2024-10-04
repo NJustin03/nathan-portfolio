@@ -10,9 +10,9 @@ import cARnivalImg from '../images/cARnival2.png'
 
 export default function ProjectsPage(){
     const cardInfo = [
-        {image: gesturescapeImg, title: "Gesturescape", text: "A 3D VR puzzle games that utilizes hand pose detection to trigger abilities to traverse through different levels.", dateCreated: "Unity, C#, Oculus SDK, VR", githubLink:"https://github.com/SkyDrqgon/Gesturescape-game"},
-        {image: cARnivalImg, title: "cARnival", text: "A mobile application where users play different AR games to assist in learning different languages.", dateCreated: "Unity, AR Foundation, C#", githubLink:"https://github.com/SkyDrqgon/cARnival-app"},
-        {image: spacehavocImg, title: "Space Havoc", text: "A 3D Space Shooter inspired by old Atari and arcade games where you shoot aliens from your spaceship.", dateCreated: "C++, Raylib/RayGUI", githubLink:"https://github.com/RyanTurner02/space-havoc"},   
+        {image: gesturescapeImg, title: "Gesturescape", text: "A 3D VR puzzle games that utilizes hand pose detection to trigger abilities to traverse through different levels.", dateCreated: "Unity, C#, Oculus SDK, VR", githubLink:"https://github.com/NJustin03/Gesturescape-game"},
+        {image: cARnivalImg, title: "cARnival", text: "A mobile application where users play different AR games to assist in learning different languages.", dateCreated: "Unity, AR Foundation, C#", githubLink:"https://github.com/NJustin03/cARnival-app"},
+        {image: spacehavocImg, title: "Space Havoc", text: "A 3D Space Shooter inspired by old Atari and arcade games where you shoot aliens from your spaceship.", dateCreated: "C++, Raylib/RayGUI", githubLink:"https://github.com/NJustin03/space-havoc"},   
     ];
 
     const [currentPage, setCurrentPage] = useState(1);
@@ -50,7 +50,6 @@ export default function ProjectsPage(){
         }
     };
 
-
     const renderCard = (card, index) => {
         return (
             <Card style={{background: '#535C91', flex: '0 1 400px', textAlign: 'left'}} key={index} className="Project">
@@ -59,7 +58,7 @@ export default function ProjectsPage(){
                         <span className="glowing" style={{fontSize: '24px', color: 'rgb(116, 230, 243)'}}>{card.title}</span>  
                     </div>
                     <a href={card.githubLink} target="_blank" rel="noopener noreferrer" style={{textAlign: 'right'}}>
-                            <Image src="https://cdn.iconscout.com/icon/free/png-256/free-github-1767765-1502345.png" alt="Profile" roundedCircle style={{width: '50px', background: 'white'}}/>
+                        <Image src="https://cdn.iconscout.com/icon/free/png-256/free-github-1767765-1502345.png" alt="Profile" roundedCircle style={{width: '50px', background: 'white'}}/>
                     </a>
                 </Card.Header>
                 <Card.Img variant="top" src={card.image} style={{background: 'rgb(116, 230, 243)'}}></Card.Img>

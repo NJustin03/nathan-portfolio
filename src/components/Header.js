@@ -61,7 +61,7 @@ export default function AppHeader(){
                                 <a href="https://www.linkedin.com/in/nathan-a-justin/" target="_blank" rel="noopener noreferrer">
                                     <Image src={linkedInPic} className="NavImage"/>
                                 </a>
-                                <a href="https://github.com/SkyDrqgon" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/NJustin03" target="_blank" rel="noopener noreferrer">
                                     <Image src={githubPic} className="NavImage"/>
                                 </a>
                             </div>
